@@ -1,0 +1,37 @@
+import React from "react";
+import { Button } from "./ui/button";
+import { ModeToggle } from "./mode-toggle";
+
+export const Navbar = () => {
+  return (
+    <div className="flex items-center justify-start gap-4 py-2 px-2 mt-2 ">
+      <div className="flex items-center gap-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="icon icon-tabler icons-tabler-outline icon-tabler-wallet"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12" />
+          <path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" />
+        </svg>
+        <div className="flex relative items-center gap-1">
+          <p className="text-3xl font-bold">Butua</p>
+          <p className="absolute -top-1 -right-9 text-[10px] text-xs text-neutral-500">
+            A Wallet
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-grow items-center justify-end gap-2">
+        <ModeToggle />
+      </div>
+    </div>
+  );
+};

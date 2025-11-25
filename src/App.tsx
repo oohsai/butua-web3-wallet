@@ -4,7 +4,6 @@ import Body from "./components/Body";
 import Footer from "./components/Footer";
 import { Navbar } from "./components/Navbar";
 import { ThemeProvider } from "./components/theme-provider";
-import WalletSk from "./components/WalletSk";
 
 function App() {
   return (

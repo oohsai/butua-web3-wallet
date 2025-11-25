@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { Button } from "./ui/button";
 import { generateMnemonic } from "bip39";
 import { Input } from "./ui/input";
